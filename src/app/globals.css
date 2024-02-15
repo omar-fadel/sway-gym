@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('/fonts/Alexandria-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('/fonts/GE_SS_Two_Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('/fonts/GE_SS_Two_Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 60pt;
+  line-height: 80pt;
+  font-family: 'Alexandria';
+}
+
+h2 {
+  font-size: 48pt;
+  line-height: 60pt;
+  font-family: 'Alexandria';
+}
+
+h3 {
+  font-size: 36pt;
+  line-height: 60pt;
+  font-family: 'Alexandria';
+}
+
+h4 {
+  font-size: 24pt;
+  line-height: 24pt;
+  font-family: 'Alexandria';
+}
+
