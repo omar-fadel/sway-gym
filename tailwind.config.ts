@@ -8,21 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1440px",
+      },
+      backgroundImage: {
+        "background-1": "url('/images/group-picture-1-background.png')",
+      },
       container: {
-        screens: {
-          lg: {
-            max: "1440px",
-          },
-          xl: {
-            max: "1440px",
-          },
-          md: {
-            max: "1440px",
-          },
-          "2xl": {
-            max: "1400px",
-          },
-        },
         padding: "16px",
       },
       colors: {

@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({
   onLogoClick,
 }) => {
   return (
-    <nav dir="rtl" className="flex justify-center bg-black p-8">
+    <nav className="flex justify-center bg-black p-8">
       <div className="flex w-full max-w-screen-2xl justify-between">
         <div className="flex gap-8">
           <button
