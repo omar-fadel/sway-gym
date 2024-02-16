@@ -56,7 +56,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         {open && (
           <ul className="absolute left-0 top-12 overflow-hidden rounded-lg border border-primary text-primary ">
             {choices.map((choice) => (
-              <li key={choice}>
+              <li className="z-10 bg-secondary" key={choice}>
                 <button
                   onClick={(e) => {
                     e.preventDefault();

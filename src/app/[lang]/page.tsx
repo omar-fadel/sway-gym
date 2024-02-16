@@ -136,9 +136,38 @@ export default async function Home({ params: { lang } }: any) {
           </article>
         </div>
       </section>
-      <section className="bg-secondary px-12 py-16">
-        <ContactUsForm dictionary={dict} />
+      <section className="flex justify-center gap-4 bg-secondary px-12 py-16">
+        <div className="flex max-w-screen-2xl flex-col items-center">
+          <Image
+            width={382}
+            height={683}
+            src={"/images/contact-us.png"}
+            alt="contact-us"
+          />
+          <ContactUsForm dictionary={dict} />
+        </div>
       </section>
+      <section
+        style={{ height: 509 }}
+        className="bg-feel-the-beat flex items-end justify-center bg-cover"
+      >
+        <Image
+          width={846}
+          height={461}
+          src={"/images/feel-the-beat.png"}
+          alt="feel the beat"
+        />
+      </section>
+      <footer className="flex justify-center bg-black py-16">
+        <div className="w-full max-w-screen-2xl">
+          <Image
+            width={105}
+            height={50}
+            src={"/icons/swayIcon.svg"}
+            alt="logo"
+          />
+        </div>
+      </footer>
     </div>
   );
 }
