@@ -46,7 +46,6 @@ const ContactUsForm: React.FC<{ dictionary: typeof dict }> = ({
             value={dictionary.home.form[formState.gender]}
             label={dictionary.home.form.name}
             onChange={(newValue) => {
-              console.log(newValue);
               if (newValue === dictionary.home.form.male)
                 setFormState((oldState) => ({
                   ...oldState,
@@ -145,9 +144,7 @@ const ContactUsForm: React.FC<{ dictionary: typeof dict }> = ({
             </Typography>
           </div>
           <Button onClick={() => {}} className="w-60">
-            <Typography variant="button">
-              {dictionary.home.form.submit}
-            </Typography>
+            {dictionary.home.form.submit}
           </Button>
         </div>
       </section>
