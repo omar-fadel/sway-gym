@@ -13,6 +13,7 @@ const config: Config = {
       },
       backgroundImage: {
         "background-1": "url('/images/group-picture-1-background.png')",
+        "map-background": "url('/images/address-map.png')",
       },
       container: {
         padding: "16px",

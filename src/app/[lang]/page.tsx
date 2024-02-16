@@ -1,6 +1,7 @@
 import Typography from "@/components/Typography/Typography";
 import Image from "next/image";
 import { getDictionary } from "./dictionaries";
+import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
@@ -74,6 +75,64 @@ export default async function Home({ params: { lang } }: any) {
             style={{ minWidth: 524 }}
             alt="section-two"
           />
+        </div>
+      </section>
+      <section className="flex justify-center bg-secondary">
+        <div className="mx-12 flex max-w-screen-2xl items-center justify-between gap-24 py-16">
+          <Image
+            width={386}
+            height={668}
+            alt="values"
+            src={"/images/values.png"}
+          />
+          <div className="w-3/4">
+            <InfoCardGroupContainer lang={lang} />
+          </div>
+        </div>
+      </section>
+      <section
+        className="bg-map-background flex flex-col items-center bg-cover py-16"
+        style={{ minHeight: 650 }}
+      >
+        <Typography variant="h3">{dict.home.addressTitle}</Typography>
+        <div className="flex grow flex-col items-center justify-center gap-14 text-center">
+          <article>
+            <Typography className="mb-4" variant="h4">
+              {dict.home.addressFirstLine}
+            </Typography>
+            <Typography variant="bodyLarge">
+              {dict.home.addressFirstLineDetails}
+            </Typography>
+          </article>
+          <article>
+            <Typography className="mb-6" variant="h4">
+              {dict.home.workTime}
+            </Typography>
+            <p
+              style={{
+                fontSize: "18pt",
+                fontFamily: "Alexandria",
+                fontWeight: "bold",
+              }}
+            >
+              {dict.home.fromToWorkTime}
+            </p>
+            <Typography variant="bodyLarge">
+              {dict.home.fromToWorkTimeDetails}
+            </Typography>
+            <p
+              style={{
+                fontSize: "18pt",
+                fontFamily: "Alexandria",
+                fontWeight: "bold",
+              }}
+            >
+              {dict.home.weekendException}
+            </p>
+            <Typography variant="bodyLarge">
+              {dict.home.weekendExceptionDetails}
+            </Typography>
+          </article>
         </div>
       </section>
     </div>

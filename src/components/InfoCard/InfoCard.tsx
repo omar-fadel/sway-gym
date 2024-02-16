@@ -8,8 +8,8 @@ export interface InfoCardProps {
 }
 const InfoCard: React.FC<InfoCardProps> = ({ body, icon, title }) => {
   return (
-    <article className="flex flex-col items-center gap-8">
-      <div style={{ width: 24, height: 24 }}>{icon}</div>
+    <article className="flex max-w-96 flex-col items-center gap-8">
+      <div>{icon}</div>
       <Typography variant="h4" className="text-center text-primary">
         {title}
       </Typography>
