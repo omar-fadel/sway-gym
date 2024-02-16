@@ -20,8 +20,8 @@ const InfoCardGroupContainer: React.FC<{ lang: "en" | "ar" }> = async ({
         title: infoCard.title,
         icon: (
           <Image
-            height={24}
-            width={24}
+            height={48}
+            width={48}
             alt={`info-card-${0}`}
             src={imagesUrl[index]}
           />

@@ -40,6 +40,22 @@
     "fromToWorkTime": "من السبت الى الخميس",
     "fromToWorkTimeDetails": "من الساعة - صباحا حتي الساعة - مساء",
     "weekendException": "عدا يوم الجمعة",
-    "weekendExceptionDetails": "من الساعة . مساءا حتي الساعة - مساء"
+    "weekendExceptionDetails": "من الساعة . مساءا حتي الساعة - مساء",
+    "form": {
+      "name": "اسمك",
+      "female": "سيدة",
+      "male": "سيد",
+      "namePlaceholder": "من مضلك ادحل اسمك هنا",
+      "yourNumber": "رقمك",
+      "numberPlaceholder": "من مضلك ادخلى رممك هنا",
+      "email": "بريدك الالكتروني",
+      "emailPlaceholder": "من فضلك أكتبي ايميلك هنا",
+      "source": "كيف سمعتي عنا؟",
+      "questions": "استفساراتك",
+      "textAreaHeader": "الاستفسار",
+      "textAreaplaceHolder": "من فضلك أكتبي سؤالك أو اسنمسارك هنا",
+      "subscribe": "سجلي للحصول على آخر الأخبار والأحداث والمزيد!",
+      "submit": "إتمام الحجز"
+    }
   }
 }

@@ -2,6 +2,7 @@ import Typography from "@/components/Typography/Typography";
 import Image from "next/image";
 import { getDictionary } from "./dictionaries";
 import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
+import ContactUsForm from "@/container/ContactUsForm";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
@@ -91,7 +92,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section
-        className="bg-map-background flex flex-col items-center bg-cover py-16"
+        className="flex flex-col items-center bg-map-background bg-cover py-16"
         style={{ minHeight: 650 }}
       >
         <Typography variant="h3">{dict.home.addressTitle}</Typography>
@@ -134,6 +135,9 @@ export default async function Home({ params: { lang } }: any) {
             </Typography>
           </article>
         </div>
+      </section>
+      <section className="bg-secondary px-12 py-16">
+        <ContactUsForm dictionary={dict} />
       </section>
     </div>
   );

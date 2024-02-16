@@ -40,6 +40,10 @@
     "fromToWorkTime": "من السبت الى الخميس",
     "fromToWorkTimeDetails": "من الساعة - صباحا حتي الساعة - مساء",
     "weekendException": "عدا يوم الجمعة",
-    "weekendExceptionDetails": "من الساعة . مساءا حتي الساعة - مساء"
+    "weekendExceptionDetails": "من الساعة . مساءا حتي الساعة - مساء",
+    "form": {
+      "female": "سيدة",
+      "male": "سيد"
+    }
   }
 }

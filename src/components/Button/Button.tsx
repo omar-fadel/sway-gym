@@ -4,12 +4,14 @@ import Typography from "../Typography/Typography";
 interface ButtonProps {
   children: ReactNode;
   onClick: () => void;
+  className?: string;
   color?: "primary" | "secondary";
 }
 const Button: React.FC<ButtonProps> = ({
   children,
   color = "primary",
   onClick,
+  className,
 }) => {
   const colorClass =
     color === "primary"
@@ -21,10 +23,11 @@ const Button: React.FC<ButtonProps> = ({
       : "hover:text-primary hover:bg-secondary";
   return (
     <button
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         onClick();
       }}
-      className={`rounded-full border-2 p-3 ${colorClass} ${hoverClass}`}
+      className={`rounded-full border-2 p-3 ${colorClass} ${hoverClass} ${className}`}
     >
       <Typography variant="button">{children}</Typography>
     </button>

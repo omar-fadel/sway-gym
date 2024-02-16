@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Decorator, Meta, StoryObj } from "@storybook/react";
 import Dropdown from "./Dropdown";
 
 const meta = {
