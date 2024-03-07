@@ -10,7 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "2xl": "1440px",
+        sm: "599px",
+        md: "904px",
+        lg: "1440px",
       },
       backgroundImage: {
         "background-1": "url('/images/group-picture-1-background.png')",
@@ -25,6 +27,10 @@ const config: Config = {
         secondary: "#36352f",
         white: "#ffffff",
         grey: "#a7a9ac",
+        black: "#000000",
+        inactiveGrey: "#605E5E",
+        success: "#009933",
+        error: "#cc0000",
       },
     },
   },

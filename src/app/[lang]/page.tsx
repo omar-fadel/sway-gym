@@ -9,7 +9,7 @@ export default async function Home({ params: { lang } }: any) {
   return (
     <div>
       <section className="flex justify-center bg-background-1 bg-cover">
-        <div className=" bg-grad flex w-full max-w-screen-2xl justify-between px-32 pt-16">
+        <div className=" bg-grad flex w-full max-w-screen-lg justify-between px-32 pt-16">
           <div className="flex h-full flex-col justify-center gap-2">
             <Typography variant="h3">{dict.welcome}</Typography>
             <Image
@@ -32,7 +32,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section className="flex justify-center bg-secondary">
-        <div className="mx-12  flex max-w-screen-2xl items-center justify-between gap-24 py-16">
+        <div className="mx-12  flex max-w-screen-lg items-center justify-between gap-24 py-16">
           <Image
             src={"/images/section-one.png"}
             height={552}
@@ -60,7 +60,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section className="flex justify-center bg-primary">
-        <div className="mx-12 flex max-w-screen-2xl items-center justify-between gap-24 py-16">
+        <div className="mx-12 flex max-w-screen-lg items-center justify-between gap-24 py-16">
           <article className="flex flex-col justify-center">
             <Typography className="mb-6 text-black" variant="h3">
               {dict.home.secondSection.header}
@@ -79,7 +79,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section className="flex justify-center bg-secondary">
-        <div className="mx-12 flex max-w-screen-2xl items-center justify-between gap-24 py-16">
+        <div className="mx-12 flex max-w-screen-lg items-center justify-between gap-24 py-16">
           <Image
             width={386}
             height={668}
@@ -137,7 +137,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section className="flex justify-center gap-4 bg-secondary px-12 py-16">
-        <div className="flex max-w-screen-2xl flex-col items-center">
+        <div className="flex max-w-screen-lg flex-col items-center">
           <Image
             width={382}
             height={683}
@@ -149,7 +149,7 @@ export default async function Home({ params: { lang } }: any) {
       </section>
       <section
         style={{ height: 509 }}
-        className="bg-feel-the-beat flex items-end justify-center bg-cover"
+        className="flex items-end justify-center bg-feel-the-beat bg-cover"
       >
         <Image
           width={846}
@@ -159,7 +159,7 @@ export default async function Home({ params: { lang } }: any) {
         />
       </section>
       <footer className="flex justify-center bg-black py-16">
-        <div className="w-full max-w-screen-2xl">
+        <div className="w-full max-w-screen-lg">
           <Image
             width={105}
             height={50}

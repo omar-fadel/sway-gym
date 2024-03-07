@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Header from "./Header";
+import ArabicDecorator from "@/decorators/ArabicDecorator";
 
 const meta = {
   title: "Header",
@@ -29,6 +30,11 @@ const meta = {
     ],
     buttonText: "احجزي موعدك المجاني",
   },
+  argTypes: {
+    activeItemId: {
+      options: ["0", "1", "2", "3", "4"],
+    },
+  },
   parameters: {},
 } satisfies Meta<typeof Header>;
 
@@ -36,4 +42,5 @@ export default meta;
 
 export const HeaderDemo: StoryObj<typeof meta> = {
   args: {},
+  decorators: [ArabicDecorator],
 };
