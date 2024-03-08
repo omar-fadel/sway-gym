@@ -3,9 +3,43 @@ import Image from "next/image";
 import { getDictionary } from "./dictionaries";
 import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import ContactUsForm from "@/container/ContactUsForm";
+import Section from "@/components/Section/Section";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
+  const props = {
+    sectionImage: {
+      lg: {
+        height: 552,
+        width: 546,
+        src: "/images/home/lg/section-one.png",
+      },
+      md: {
+        height: 552,
+        width: 546,
+        src: "/images/home/lg/section-one.png",
+      },
+      sm: {
+        height: 552,
+        width: 546,
+        src: "/images/home/lg/section-one.png",
+      },
+      alt: "section-one-image",
+    },
+    sectionText: {
+      heading: "سواي. سواي. سواي.",
+      variant: "primary",
+      subHeading: "نحن لسنا مجرد صالة رياضية",
+      paragraph: `بل نحن مركز للطاقة، حيث تتألق النساء بسطوع
+وتنخط الحدود.
+صالتنا الحديثة هي مركز للنساء الجريئة والشجاعة
+من جلسات الرقص الخلابة إلى أجدد التمارين، سواي
+جيم هو المكان الذي تتحول فيه رحلتك الريااضية
+إلى مغامرة مثيرة استعدي لتجربة القوة والمرج
+والصداقة كما لم تشهديها من قبل!`,
+    },
+    variant: "secondary",
+  };
   return (
     <div>
       <section className="flex justify-center bg-background-1 bg-cover">
@@ -168,6 +202,7 @@ export default async function Home({ params: { lang } }: any) {
           />
         </div>
       </footer>
+      <Section {...props} />
     </div>
   );
 }

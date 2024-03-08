@@ -16,7 +16,9 @@ const Reservation: React.FC<ReservationProps> = ({
       <Typography className="text-wrap text-white" variant="bodySmall">
         {reservationText}
       </Typography>
-      <Button onClick={onReserve}>{reservationButtonText}</Button>
+      <Button className="max-w-64" onClick={onReserve}>
+        {reservationButtonText}
+      </Button>
     </div>
   );
 };
