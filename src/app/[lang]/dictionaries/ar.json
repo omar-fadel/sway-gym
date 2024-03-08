@@ -56,6 +56,16 @@
       "textAreaplaceHolder": "من فضلك أكتبي سؤالك أو اسنمسارك هنا",
       "subscribe": "سجلي للحصول على آخر الأخبار والأحداث والمزيد!",
       "submit": "إتمام الحجز"
+    },
+    "footer": {
+      "followTitle": "تابعيا علي",
+      "contactUs": "تواصلي",
+      "phoneNumber": "+966 554 697 340",
+      "email": "info@swaygym.com",
+      "address": "الدمام - حي الشعلة - شارع البهجة - بناية رقم ٣٠٨٦",
+      "reserveTitle": "احجزي الآن",
+      "reserveText": "بادري بالحجز الآن.. واحصلي على تشريح عضلي وخطة مجانية.",
+      "reserveButtonText": "احجزي موعدك المجاني"
     }
   }
 }

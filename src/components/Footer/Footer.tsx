@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Contacts, { ContactsProps } from "./Contacts/Contacts";
 import Follow, { FollowProps } from "./Follow/Follow";
@@ -24,7 +25,13 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   return (
     <footer className="flex flex-col gap-4 bg-black px-8 py-4">
-      <Image className="mb-4 -mx-4" alt="logo" height={150} width={150} src={"/icons/swayIcon.svg"} />
+      <Image
+        className="-mx-4 mb-4"
+        alt="logo"
+        height={150}
+        width={150}
+        src={"/icons/swayIcon.svg"}
+      />
       <div className="flex flex-wrap">
         <SectionWrapper title={followTitle}>
           <Follow {...followIcons} />

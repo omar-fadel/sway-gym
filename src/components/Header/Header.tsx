@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({
           </div>
           <div
             style={{
-              left: menuIsOpen ? 0 : "-100%",
+              left: menuIsOpen ? 0 : "-200%",
             }}
             className="absolute top-0 flex h-screen w-screen cursor-pointer flex-col bg-primary py-10 transition-all ease-in sm:hidden sm:hidden"
           >

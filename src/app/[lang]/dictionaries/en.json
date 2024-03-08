@@ -1,61 +1,71 @@
 {
-  "welcome": "Welcome to",
-  "header": ["About Us", "Location", "Prices", "Classes", "Contact Us"],
-  "headerButton": "Book Your Free Appointment",
+  "welcome": "اهلا بك في",
+  "header": ["حولنا", "العنوان", "الاسعار", "الفصول", "التواصل معنا"],
+  "headerButton": "احجزي موعدك المجاني",
   "home": {
     "firstSection": {
-      "header": "Sway. Sway. Sway.",
-      "subHeader": "We are not just a gym",
-      "bodyOne": "We are an energy center, where women shine brightly and exceed boundaries.",
-      "bodyTwo": "Our modern gym is a hub for bold and courageous women.",
-      "bodyThree": "From enchanting dance sessions to the latest workouts, Sway Gym is where your fitness journey transforms into an exciting adventure. Get ready to experience strength, fun, and friendship like never before."
+      "header": "سواي. سواي. سواي",
+      "subHeader": "نحن لسنا مجرد صالة رياضة",
+      "bodyOne": "بل نحن مركز للطاقة, حيث تتألق النساء بسطوع و تتخطى الحدود",
+      "bodyTwo": "صالتنا الحديثة هي مركز للنساء الجريئة و الشجاعة",
+      "bodyThree": "من جلسات الرقص الخلابة الى أجدد التمارين سواي جيم هو المكان الذي تتحول فيه رحلتك الرياضية الى مغامرة مثيرة استعدي لتجربة القوة و المرح والصداقة كما لم تشهديها من قبل"
     },
     "secondSection": {
-      "header": "Sway is the rhythm of change in the Kingdom",
-      "body": "At Sway Gym, we envision a kingdom that welcomes every woman with her unique strength, whether it comes from within or outside. We strive to be the rhythm of positive change, creating a community flourishing with strength, well-being, and joy."
+      "header": "سواي هو ايقاع التغيير في المملكة",
+      "body": "في سواي جيم, نتصور مملكة ترحب كل امراءة بقوتها فيها, سواء كانت قوتها نابعة من الداخل او الخارج . نحن نسعى لأن نكون ايقاع التغيير الايجابي,لنخلق مجتمعا تزدهر القوة والعافية والفرح به"
     },
-    "infoCardsTitle": "Our Values",
+    "infoCardsTitle": "قيمنا",
     "infoCards": [
       {
-        "title": "Community",
-        "body": "We believe in the power of a supportive community, where friendships form, and everyone encourages each other towards their fitness goals."
+        "title": "المجتمع",
+        "body": "نحن نؤمن بقوة المجتمع الداعم, حيث تتكون صداقات و يشجع الجميع بعضهن البعض نحو اهدافهم الرياضية"
       },
       {
-        "title": "Inclusivity",
-        "body": "We embrace diversity and create a place where every woman feels welcome, regardless of age, experience, or fitness level."
+        "title": "الاحتواء",
+        "body": "نحن نحتضن التنوع ونخلق مكان تشعر فيه كل امرأة بالترحيب، بغض النظر عن العمر أو الخبرة أو مستوى اللياقة البدئية"
       },
       {
-        "title": "No Judgment",
-        "body": "In Sway Gym, we support an area for women to be themselves, free from judgment or criticism."
+        "title": "لا حكم لدينا",
+        "body": "في صالة سواي، ندعم منطقة للئساء أن يكونوا ألفسهينه بعيدين عن التقييم أو الانتقاد."
       },
       {
-        "title": "Passion",
-        "body": "We are passionate about helping women lead healthier, happier lives. Our commitment to excellence drives us to continuous improvement and surpassing expectations."
+        "title": "الشفف",
+        "body": "نحن متحمسون لمسساعدة اللساع على قيدة حياة أكثر صحةمسعادة التفائي في التميز لدينا يدفعنا للتحسين المستمر ونجاوز التوقعات."
       }
     ],
-    "addressTitle": "Dammam Branch",
-    "addressFirstLine": "Dammam Branch Address",
-    "addressFirstLineDetails": "Shoala District - Bahja Street - Building No. 3086",
-    "workTime": "Working Hours",
-    "fromToWorkTime": "Saturday to Thursday",
-    "fromToWorkTimeDetails": "From - Morning to - Evening",
-    "weekendException": "Except Friday",
-    "weekendExceptionDetails": "From - Evening to - Evening",
+    "addressTitle": "فرع الدمام",
+    "addressFirstLine": "عنوان فرع الدمام",
+    "addressFirstLineDetails": "حي الشعلة - شارع البهجة - بناية رقم ٣٠٨٦",
+    "workTime": "مواعيد العمل",
+    "fromToWorkTime": "من السبت الى الخميس",
+    "fromToWorkTimeDetails": "من الساعة - صباحا حتي الساعة - مساء",
+    "weekendException": "عدا يوم الجمعة",
+    "weekendExceptionDetails": "من الساعة . مساءا حتي الساعة - مساء",
     "form": {
-      "name": "Your Name",
-      "female": "Ms.",
-      "male": "Mr.",
-      "namePlaceholder": "Please enter your name here",
-      "yourNumber": "Your Number",
-      "numberPlaceholder": "Please enter your number here",
-      "email": "Your Email",
-      "emailPlaceholder": "Please enter your email here",
-      "source": "How did you hear about us?",
-      "questions": "Your Inquiries",
-      "textAreaHeader": "Inquiry",
-      "textAreaplaceHolder": "Please write your question or comment here",
-      "subscribe": "Subscribe for the latest news, events, and more!",
-      "submit": "Submit Booking"
+      "name": "اسمك",
+      "female": "سيدة",
+      "male": "سيد",
+      "namePlaceholder": "من مضلك ادحل اسمك هنا",
+      "yourNumber": "رقمك",
+      "numberPlaceholder": "من مضلك ادخلى رممك هنا",
+      "email": "بريدك الالكتروني",
+      "emailPlaceholder": "من فضلك أكتبي ايميلك هنا",
+      "source": "كيف سمعتي عنا؟",
+      "questions": "استفساراتك",
+      "textAreaHeader": "الاستفسار",
+      "textAreaplaceHolder": "من فضلك أكتبي سؤالك أو اسنمسارك هنا",
+      "subscribe": "سجلي للحصول على آخر الأخبار والأحداث والمزيد!",
+      "submit": "إتمام الحجز"
+    },
+    "footer": {
+      "followTitle": "تابعيا علي",
+      "contactUs": "تواصلي",
+      "phoneNumber": "+966 554 697 340",
+      "email": "info@swaygym.com",
+      "address": "الدمام - حي الشعلة - شارع البهجة - بناية رقم ٣٠٨٦",
+      "reserveTitle": "احجزي الآن",
+      "reserveText": "بادري بالحجز الآن.. واحصلي على تشريح عضلي وخطة مجانية.",
+      "reserveButtonText": "احجزي موعدك المجاني"
     }
   }
 }
