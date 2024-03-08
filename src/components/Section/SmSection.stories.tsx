@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
+import SmSection from "./SmSection";
 import ArabicDecorator from "@/decorators/ArabicDecorator";
-import Section from "./Section";
 
 const meta = {
-  component: Section,
+  component: SmSection,
+  title: "Small Section",
   args: {},
-  title: "Section",
   decorators: ArabicDecorator,
-} satisfies Meta<typeof Section>;
+} satisfies Meta<typeof SmSection>;
 
 export default meta;
 
@@ -20,7 +20,6 @@ export const Primary: StoryObj<typeof meta> = {
       width: 546,
       src: "/images/home/section-one.png",
     },
-    textClassName: "text-center lg:text-start",
     sectionText: {
       heading: "سواي. سواي. سواي.",
       variant: "primary",

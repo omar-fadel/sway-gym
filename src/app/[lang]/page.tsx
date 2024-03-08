@@ -3,7 +3,7 @@ import Image from "next/image";
 import { getDictionary } from "./dictionaries";
 import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import ContactUsForm from "@/container/ContactUsForm";
-import Section from "@/components/Section/Section";
+import Section from "@/components/Section/MdAndUpSection";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
