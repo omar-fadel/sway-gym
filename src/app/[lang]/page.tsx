@@ -14,11 +14,11 @@ export default async function Home({ params: { lang } }: any) {
     <div>
       <section className="flex justify-center bg-background-1 bg-cover">
         <div className=" bg-grad flex w-full max-w-screen-lg flex-wrap justify-center px-32 pt-16 lg:justify-between">
-          <div className="flex w-full flex-col items-center justify-center gap-2 lg:w-1/2">
+          <div className="flex w-full flex-col items-center justify-center gap-2 md:w-1/2">
             <Typography variant="h3">{dict.welcome}</Typography>
             <Image alt="logo" src="/images/logo.png" width={380} height={105} />
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="w-full md:w-1/2">
             <Image
               alt="laughing-group"
               src="/images/group-picture.png"
