@@ -3,7 +3,7 @@ import Typography from "@/components/Typography/Typography";
 
 export interface ReservationProps {
   reservationText: string;
-  onReserve: () => void;
+  onReserve?: () => void;
   reservationButtonText: string;
 }
 const Reservation: React.FC<ReservationProps> = ({
@@ -16,7 +16,12 @@ const Reservation: React.FC<ReservationProps> = ({
       <Typography className="text-wrap text-white" variant="bodySmall">
         {reservationText}
       </Typography>
-      <Button className="max-w-64" onClick={onReserve}>
+      <Button
+        className="max-w-64"
+        onClick={() => {
+          if (onReserve) onReserve;
+        }}
+      >
         {reservationButtonText}
       </Button>
     </div>
