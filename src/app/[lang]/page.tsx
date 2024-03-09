@@ -132,8 +132,7 @@ export default async function Home({ params: { lang } }: any) {
         </div>
       </section>
       <section
-        style={{ height: 509 }}
-        className="flex items-end justify-center bg-feel-the-beat bg-cover px-8"
+        className="flex items-end justify-center bg-feel-the-beat bg-cover p-8"
       >
         <Image
           width={846}

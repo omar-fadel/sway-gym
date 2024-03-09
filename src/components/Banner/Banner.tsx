@@ -15,6 +15,7 @@ interface BannerProps {
   bannerImage?: Image;
   variant: "primary" | "secondary";
   revert?: boolean;
+  revertTextAndImage?: boolean;
 }
 
 const Banner: React.FC<BannerProps> = ({
@@ -24,6 +25,7 @@ const Banner: React.FC<BannerProps> = ({
   bannerBackgroundImage,
   variant,
   revert,
+  revertTextAndImage
 }) => {
   return (
     <section className={`bg-${variant} flex justify-center`}>
@@ -31,7 +33,7 @@ const Banner: React.FC<BannerProps> = ({
         style={{ backgroundImage: bannerBackgroundImage }}
         className={`box-border flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12 `}
       >
-        <div className={`flex w-full flex-col items-center gap-4 p-8 md:w-1/2`}>
+        <div className={`flex w-full flex-col items-center ${revertTextAndImage ? 'md:items-start' : 'md:items-end'}  gap-4 p-8 md:w-1/2 ${revertTextAndImage ? 'order-2' : 'order-1'}`}>
           <Typography
             className={`text-center ${revert ? "order-2" : "order-1"}`}
             variant="h3"
@@ -49,7 +51,7 @@ const Banner: React.FC<BannerProps> = ({
           ) : null}
         </div>
         {bannerImage ? (
-          <div className={`flex w-full justify-center px-8 md:w-1/2`}>
+          <div className={`flex w-full justify-center md:justify-start px-8 md:w-1/2 ${revertTextAndImage ? 'order-1' : 'order-2'}`}>
             <Image
               alt={bannerImage.alt}
               height={bannerImage.height}

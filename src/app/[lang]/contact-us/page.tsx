@@ -33,6 +33,8 @@ export default async function Home({ params: { lang } }: any) {
       </section>
       <Banner
         bannerBackgroundImage="url('/images/booking/backgrounds/3bg.png')"
+        revert
+        revertTextAndImage
         title={dict.booking.banner}
         variant="primary"
         bannerImage={{
