@@ -67,5 +67,29 @@
       "reserveText": "بادري بالحجز الآن.. واحصلي على تشريح عضلي وخطة مجانية.",
       "reserveButtonText": "احجزي موعدك المجاني"
     }
+  },
+  "address": {
+    "banner": {
+      "title": "جئنا لك الآن"
+    },
+    "wordSeperator": "مستعدة؟",
+    "addressDetails": {
+      "title": "فرع الدمام",
+      "detailsTitle": "عنوان فرع الدمام",
+      "details": "حي الشعلة - شارع البهجة - بناية رقم ٣٠٨٦",
+      "workTimeTitle": "مواعيد العمل",
+      "normalWorkTime": {
+        "days": "من السبت الى الخميس",
+        "hours": "من الساعة - صباحا حتي الساعة - مساء"
+      },
+      "weekendWorkTime": {
+        "days": "عدا يوم الجمعة",
+        "hours": "من الساعة . مساءا حتي الساعة - مساء"
+      }
+    },
+    "reservation": {
+      "title": "احجزي موعد",
+      "subTitle": "لنتصل بك من هنا"
+    }
   }
 }

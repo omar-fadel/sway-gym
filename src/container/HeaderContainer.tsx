@@ -2,13 +2,16 @@
 
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Header from "@/components/Header/Header";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const HeaderContainer: React.FC<{
   headers: string[];
   headerButtonText: string;
-}> = ({ headers, headerButtonText }) => {
+  locale: "ar" | "en";
+}> = ({ headers, headerButtonText, locale }) => {
   const router = useRouter();
+  const pathname = usePathname();
+  const currentRoute = pathname.split("/").pop();
   return (
     <Header
       onLogoClick={() => {
@@ -18,29 +21,29 @@ const HeaderContainer: React.FC<{
         console.log("button click");
       }}
       onHeaderItemClick={(id) => {
-        console.log(`${id}`);
-        router.push(id);
+        router.push(`/${locale}/${id}`);
       }}
       buttonText={headerButtonText}
+      activeItemId={currentRoute}
       headerItems={[
         {
-          id: "0",
+          id: "around-us",
           text: headers[0],
         },
         {
-          id: "1",
+          id: "address",
           text: headers[1],
         },
         {
-          id: "2",
+          id: "prices",
           text: headers[2],
         },
         {
-          id: "3",
+          id: "classes",
           text: headers[3],
         },
         {
-          id: "4",
+          id: "contact-us",
           text: headers[4],
         },
       ]}

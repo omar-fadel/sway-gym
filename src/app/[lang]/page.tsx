@@ -4,12 +4,9 @@ import { getDictionary } from "./dictionaries";
 import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import ContactUsForm from "@/container/ContactUsForm";
 import Section from "@/components/Section/Section";
-import Footer from "@/components/Footer/Footer";
-import { getSocialMediaIconPath } from "@/components/utils/getSocialMediaIconPath";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
-
   return (
     <div>
       <section className="flex justify-center bg-background-1 bg-cover">
@@ -143,31 +140,6 @@ export default async function Home({ params: { lang } }: any) {
           alt="feel the beat"
         />
       </section>
-      <Footer
-        contacts={{
-          items: [
-            { icon: "/icons/phone.svg", value: dict.home.footer.phoneNumber },
-            { icon: "/icons/at.svg", value: dict.home.footer.email },
-            { icon: "/icons/location.svg", value: dict.home.footer.address },
-          ],
-        }}
-        contactsTitle={dict.home.footer.contactUs}
-        followIcons={{
-          icons: getSocialMediaIconPath(
-            "facebook",
-            "instagram",
-            "x",
-            "snapchat",
-            "linkedIn",
-          ),
-        }}
-        followTitle={dict.home.footer.followTitle}
-        reservation={{
-          reservationButtonText: dict.home.footer.reserveButtonText,
-          reservationText: dict.home.footer.reserveText,
-        }}
-        reservationTitle={dict.home.footer.reserveTitle}
-      />
     </div>
   );
 }

@@ -26,7 +26,8 @@ const Banner: React.FC<BannerProps> = ({
   return (
     <section className={`bg-${variant} flex justify-center`}>
       <div
-        className={`background- flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12 bg-${bannerBackgroundImage}`}
+        style={{ backgroundImage: bannerBackgroundImage }}
+        className={`background- flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12 `}
       >
         <div className="mx-8 mb-8 flex w-full flex-col items-center gap-4 sm:w-fit">
           <Typography className="text-center" variant="h3">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import HeaderContainer from "@/container/HeaderContainer";
 import { getDictionary } from "./dictionaries";
+import Footer from "@/components/Footer/Footer";
+import { getSocialMediaIconPath } from "@/components/utils/getSocialMediaIconPath";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +20,42 @@ export default async function RootLayout({
   return (
     <div dir={params.lang === "ar" ? "rtl" : "ltr"}>
       <HeaderContainer
+        locale={params.lang}
         headers={dictionaries.header}
         headerButtonText={dictionaries.headerButton}
       />
       {children}
+      <Footer
+        contacts={{
+          items: [
+            {
+              icon: "/icons/phone.svg",
+              value: dictionaries.home.footer.phoneNumber,
+            },
+            { icon: "/icons/at.svg", value: dictionaries.home.footer.email },
+            {
+              icon: "/icons/location.svg",
+              value: dictionaries.home.footer.address,
+            },
+          ],
+        }}
+        contactsTitle={dictionaries.home.footer.contactUs}
+        followIcons={{
+          icons: getSocialMediaIconPath(
+            "facebook",
+            "instagram",
+            "x",
+            "snapchat",
+            "linkedIn",
+          ),
+        }}
+        followTitle={dictionaries.home.footer.followTitle}
+        reservation={{
+          reservationButtonText: dictionaries.home.footer.reserveButtonText,
+          reservationText: dictionaries.home.footer.reserveText,
+        }}
+        reservationTitle={dictionaries.home.footer.reserveTitle}
+      />
     </div>
   );
 }

@@ -28,7 +28,8 @@ const AddressSection: React.FC<AddressSectionProps> = ({
   return (
     <section className={`bg-${variant} flex justify-center`}>
       <div
-        className={`flex w-full max-w-screen-lg flex-col items-center justify-center bg-cover px-8 pb-16 pt-12 text-center bg-${backgroundImage}`}
+        style={{ backgroundImage }}
+        className={`flex w-full max-w-screen-lg flex-col items-center justify-center bg-cover px-8 pb-16 pt-12 text-center `}
       >
         <Typography className="mb-16 text-primary" variant="h3">
           {sectionTitle}
