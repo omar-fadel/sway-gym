@@ -1,7 +1,6 @@
 import ReservationBanner from "@/components/ReservationBanner/ReservationBanner";
 import { getDictionary } from "../dictionaries";
 import Image from "next/image";
-import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import Banner from "@/components/Banner/Banner";
 import ContactUsForm from "@/container/ContactUsForm";
 
