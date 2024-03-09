@@ -14,6 +14,7 @@ interface BannerProps {
   title: string;
   bannerImage?: Image;
   variant: "primary" | "secondary";
+  revert?: boolean;
 }
 
 const Banner: React.FC<BannerProps> = ({
@@ -22,19 +23,24 @@ const Banner: React.FC<BannerProps> = ({
   bannerLogo,
   bannerBackgroundImage,
   variant,
+  revert,
 }) => {
   return (
     <section className={`bg-${variant} flex justify-center`}>
       <div
         style={{ backgroundImage: bannerBackgroundImage }}
-        className={`background- flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12 `}
+        className={`box-border flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12 `}
       >
-        <div className="mx-8 mb-8 flex w-full flex-col items-center gap-4 sm:w-fit">
-          <Typography className="text-center" variant="h3">
+        <div className={`flex w-full flex-col items-center gap-4 p-8 md:w-1/2`}>
+          <Typography
+            className={`text-center ${revert ? "order-2" : "order-1"}`}
+            variant="h3"
+          >
             {title}
           </Typography>
           {bannerLogo ? (
             <Image
+              className={`${revert ? "order-1" : "order-2"}`}
               alt={bannerLogo.alt}
               height={bannerLogo.height}
               width={bannerLogo.width}
@@ -43,7 +49,7 @@ const Banner: React.FC<BannerProps> = ({
           ) : null}
         </div>
         {bannerImage ? (
-          <div className="mx-8">
+          <div className={`flex w-full justify-center px-8 md:w-1/2`}>
             <Image
               alt={bannerImage.alt}
               height={bannerImage.height}
