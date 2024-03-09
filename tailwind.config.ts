@@ -18,6 +18,9 @@ const config: Config = {
         "background-1": "url('/images/group-picture-1-background.png')",
         "map-background": "url('/images/address-map.png')",
         "feel-the-beat": "url('/images/feel-the-beat-background.png')",
+        "address-background-1": "url('/images/address/backgrounds/1bg.png')",
+        "address-background-2": "url('/images/address/backgrounds/2bg.png')",
+        "address-background-3": "url('/images/address/backgrounds/3bg.png')",
       },
       container: {
         padding: "16px",

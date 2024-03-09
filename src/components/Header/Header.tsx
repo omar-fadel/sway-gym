@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
@@ -78,6 +79,9 @@ const Header: React.FC<HeaderProps> = ({
               <button
                 className={`p-4 px-8 ${headerItem.id === activeItemId ? "bg-grey" : "bg-primary"} ${headerItem.id === activeItemId ? "text-primary" : "text-grey"}`}
                 key={`menu-item-${headerItem.id}`}
+                onClick={() => {
+                  onHeaderItemClick(headerItem.id);
+                }}
               >
                 <Typography className={`text-start `} variant="button">
                   {headerItem.text}
@@ -111,7 +115,11 @@ const Header: React.FC<HeaderProps> = ({
                     style={{ marginTop: -32 }}
                   />
                 ) : null}
-                <button>
+                <button
+                  onClick={() => {
+                    onHeaderItemClick(headerItem.id);
+                  }}
+                >
                   <Typography
                     variant="bodySmall"
                     className={`${activeItemId === headerItem.id ? "text-primary" : "text-grey"}`}
