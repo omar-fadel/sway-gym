@@ -1,6 +1,5 @@
 "use client";
 
-import { getDictionary } from "@/app/[lang]/dictionaries";
 import Header from "@/components/Header/Header";
 import { usePathname, useRouter } from "next/navigation";
 

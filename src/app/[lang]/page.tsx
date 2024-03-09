@@ -4,27 +4,29 @@ import { getDictionary } from "./dictionaries";
 import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import ContactUsForm from "@/container/ContactUsForm";
 import Section from "@/components/Section/Section";
+import Banner from "@/components/Banner/Banner";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
   return (
     <div>
-      <section className="flex justify-center bg-background-1 bg-cover">
-        <div className=" bg-grad flex w-full max-w-screen-lg flex-wrap justify-center px-32 pt-16 lg:justify-between">
-          <div className="flex w-full flex-col items-center justify-center gap-2 md:w-1/2">
-            <Typography variant="h3">{dict.welcome}</Typography>
-            <Image alt="logo" src="/images/logo.png" width={380} height={105} />
-          </div>
-          <div className="w-full md:w-1/2">
-            <Image
-              alt="laughing-group"
-              src="/images/group-picture.png"
-              width={2765}
-              height={1573}
-            />
-          </div>
-        </div>
-      </section>
+      <Banner
+        bannerBackgroundImage="url('/images/group-picture-1-background.png')"
+        title={dict.welcome}
+        variant="primary"
+        bannerImage={{
+          alt: "laughing group",
+          src: "/images/group-picture.png",
+          height: 612,
+          width: 762,
+        }}
+        bannerLogo={{
+          alt: "logo",
+          src: "/images/logo.png",
+          height: 105,
+          width: 380,
+        }}
+      />
       <Section
         sectionText={{
           variant: "primary",
@@ -131,7 +133,7 @@ export default async function Home({ params: { lang } }: any) {
       </section>
       <section
         style={{ height: 509 }}
-        className="flex items-end justify-center bg-feel-the-beat bg-cover"
+        className="flex items-end justify-center bg-feel-the-beat bg-cover px-8"
       >
         <Image
           width={846}

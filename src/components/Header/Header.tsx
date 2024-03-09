@@ -81,6 +81,7 @@ const Header: React.FC<HeaderProps> = ({
                 key={`menu-item-${headerItem.id}`}
                 onClick={() => {
                   onHeaderItemClick(headerItem.id);
+                  setMenuIsOpen(false);
                 }}
               >
                 <Typography className={`text-start `} variant="button">
@@ -118,6 +119,7 @@ const Header: React.FC<HeaderProps> = ({
                 <button
                   onClick={() => {
                     onHeaderItemClick(headerItem.id);
+                    setMenuIsOpen(false);
                   }}
                 >
                   <Typography
