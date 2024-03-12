@@ -5,6 +5,7 @@ import InfoCardGroupContainer from "@/container/InfoCardGroupContainer";
 import ContactUsForm from "@/container/ContactUsForm";
 import Section from "@/components/Section/Section";
 import Banner from "@/components/Banner/Banner";
+import ValuesSection from "@/components/ValuesSection/ValuesSection";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
@@ -61,20 +62,19 @@ export default async function Home({ params: { lang } }: any) {
           width: 524,
         }}
       />
-      <section className="flex justify-center bg-secondary">
-        <div className="mx-12 flex max-w-screen-lg items-center justify-center gap-24 py-16">
-          <Image
-            className="hidden lg:block"
-            width={386}
-            height={668}
-            alt="values"
-            src={"/images/values.png"}
-          />
-          <div className="w-3/4">
-            <InfoCardGroupContainer lang={lang} />
-          </div>
-        </div>
-      </section>
+      <ValuesSection
+        title={dict.home.infoCardsTitle}
+        items={dict.home.infoCards.map((card, index) => ({
+          ...card,
+          icon: `/icons/infoCards-${index + 1}.svg`,
+        }))}
+        valuesImage={{
+          src: "/images/values.png",
+          alt: "values",
+          height: 668,
+          width: 386,
+        }}
+      />
       <section
         className="flex flex-col items-center bg-map-background bg-cover py-16"
         style={{ minHeight: 650 }}
@@ -131,9 +131,7 @@ export default async function Home({ params: { lang } }: any) {
           <ContactUsForm dictionary={dict} />
         </div>
       </section>
-      <section
-        className="flex items-end justify-center bg-feel-the-beat bg-cover p-8"
-      >
+      <section className="flex items-end justify-center bg-feel-the-beat bg-cover p-8">
         <Image
           width={846}
           height={461}
