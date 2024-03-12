@@ -25,6 +25,65 @@ const config: Config = {
       container: {
         padding: "16px",
       },
+      fontSize: {
+        h1: [
+          "5em",
+          {
+            fontWeight: "bold",
+            lineHeight: "1.5em",
+          },
+        ],
+        h2: [
+          "3em",
+          {
+            fontWeight: "bold",
+            lineHeight: "1.7em",
+          },
+        ],
+        h3: [
+          "2em",
+          {
+            fontWeight: "bold",
+            lineHeight: "1.3em",
+          },
+        ],
+        h4: [
+          "1.33em",
+          {
+            fontWeight: "bold",
+            lineHeight: "1.5em",
+          },
+        ],
+        b1: [
+          "1.33em",
+          {
+            lineHeight: "1.7em",
+          },
+        ],
+        b2: [
+          "1.17em",
+          {
+            lineHeight: "1.17em",
+            fontWeight: "bold",
+          },
+        ],
+        b3: [
+          "1em",
+          {
+            lineHeight: "1.5em",
+          },
+        ],
+        b4: [
+          "0.83em",
+          {
+            lineHeight: "1.5em",
+          },
+        ],
+        button: ["1.17em", { lineHeight: "1.17em" }],
+        label: ["1.17em", { lineHeight: "1.17em" }],
+        tabletLabel: ["1em", { lineHeight: "1.17em" }],
+        footer: ["1.17em", { lineHeight: "1.17em" }],
+      },
       colors: {
         primary: "#ffde00",
         secondary: "#36352f",

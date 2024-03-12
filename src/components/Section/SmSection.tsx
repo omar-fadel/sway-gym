@@ -12,26 +12,24 @@ const SmSection: React.FC<SectionProps> = ({
 }) => {
   return (
     <article
-      className={`flex flex-col items-center gap-6 p-8  ${variant === "primary" ? "bg-primary" : "bg-secondary"} ${className}`}
+      className={`flex flex-col items-center py-4 ${variant === "primary" ? "bg-primary" : "bg-secondary"} ${className}`}
     >
-      {sectionText.heading ? (
-        <Typography
-          variant="h2"
-          className={`mb-4 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} text-center`}
+      {sectionText.heading && (
+        <h2
+          className={`text-h4 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} mb-4 text-center`}
         >
           {sectionText.heading}
-        </Typography>
-      ) : null}
-      {sectionText.subHeading ? (
-        <Typography
-          variant="h3"
-          className={`mb-4 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-center`}
+        </h2>
+      )}
+      {sectionText.subHeading && (
+        <h2
+          className={`text-h4 mb-4 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-center`}
         >
           {sectionText.subHeading}
-        </Typography>
-      ) : null}
-      {image ? (
-        <div className={`mx-8 ${imageClassName}`}>
+        </h2>
+      )}
+      {image && (
+        <div className={`mb-4 w-2/4 ${imageClassName}`}>
           <Image
             src={image.src}
             height={image.height}
@@ -39,18 +37,16 @@ const SmSection: React.FC<SectionProps> = ({
             alt={image.alt}
           />
         </div>
-      ) : null}
-      {sectionText.paragraph
-        ? sectionText.paragraph.map((p, index) => (
-            <Typography
-              key={`paragaraph-${id}-${index}`}
-              variant="bodyLarge"
-              className={`text-center ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
-            >
-              {p}
-            </Typography>
-          ))
-        : null}
+      )}
+      {sectionText.paragraph &&
+        sectionText.paragraph.map((p, index) => (
+          <p
+            key={`paragaraph-${id}-${index}`}
+            className={`text-b4 px-4 text-center ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
+          >
+            {p}
+          </p>
+        ))}
     </article>
   );
 };

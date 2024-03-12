@@ -10,6 +10,25 @@ const meta = {
 
 export default meta;
 
+export const HomePageBanner: StoryObj<typeof meta> = {
+  args: {
+    bannerBackgroundImage: "url('/images/group-picture-1-background.png')",
+    variant: "primary",
+    title: "اهلا بك في",
+    bannerImage: {
+      alt: "lauging group",
+      src: "/images/group-picture.png",
+      height: 612,
+      width: 762,
+    },
+    bannerLogo: {
+      alt: "Logo",
+      src: "/images/logo.png",
+      height: 105,
+      width: 380,
+    },
+  },
+};
 export const Primary: StoryObj<typeof meta> = {
   args: {
     bannerBackgroundImage: "address-background-1",
