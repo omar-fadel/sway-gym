@@ -6,9 +6,9 @@ const Section: React.FC<SectionProps> = (props) => {
     <>
       <MdAndUpSection
         {...props}
-        className={`hidden md:flex ${props.className}`}
+        className={`hidden sm:flex ${props.className}`}
       />
-      <SmSection {...props} className={`flex md:hidden ${props.className}`} />
+      <SmSection {...props} className={`flex sm:hidden ${props.className}`} />
     </>
   );
 };

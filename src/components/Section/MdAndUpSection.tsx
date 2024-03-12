@@ -56,7 +56,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
       </section> */}
       <section
         style={{ backgroundImage: bgImage }}
-        className={`box-border flex w-full max-w-screen-lg py-6`}
+        className={`box-border flex w-full max-w-screen-lg py-6 lg:py-16`}
       >
         {image && (
           <div
