@@ -56,7 +56,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
       </section> */}
       <section
         style={{ backgroundImage: bgImage }}
-        className={`box-border flex w-full max-w-screen-lg py-6 lg:py-16`}
+        className={`box-border flex w-full max-w-screen-lg py-6 md:py-16`}
       >
         {image && (
           <div
@@ -75,7 +75,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
         >
           {sectionText.heading && (
             <h2
-              className={`text-h3 lg:text-h2 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} mb-4 text-center`}
+              className={`text-h3 md:text-h2 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} mb-4 text-center`}
             >
               {sectionText.heading}
             </h2>
@@ -91,7 +91,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
             sectionText.paragraph.map((p, index) => (
               <p
                 key={`paragaraph-${id}-${index}`}
-                className={`text-b3 lg:text-b1  text-center ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
+                className={`text-b3 md:text-b1  text-center ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
               >
                 {p}
               </p>

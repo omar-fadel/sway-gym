@@ -37,7 +37,7 @@ const config: Config = {
           "3em",
           {
             fontWeight: "bold",
-            lineHeight: "1.7em",
+            lineHeight: "1.2em",
           },
         ],
         h3: [

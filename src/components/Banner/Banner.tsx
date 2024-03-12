@@ -31,7 +31,7 @@ const Banner: React.FC<BannerProps> = ({
     <section className={`bg-${variant} flex justify-center`}>
       {/* <div
         style={{ backgroundImage: bannerBackgroundImage }}
-        className={` flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-4 md:pt-6 lg:pt-16 `}
+        className={` flex w-full max-w-screen-md flex-wrap items-center justify-center bg-cover pt-4 md:pt-6 lg:pt-16 `}
       >
         <div
           className={`box-border flex w-1/2 flex-col items-center ${revertTextAndImage ? "md:items-start" : "md:items-end"}  w-full gap-4 p-8 md:w-[37.5%] lg:w-5/12 ${revertTextAndImage ? ",d:order-2" : "md:order-1"} order-2`}
@@ -66,13 +66,13 @@ const Banner: React.FC<BannerProps> = ({
       </div> */}
       <div
         style={{ backgroundImage: bannerBackgroundImage }}
-        className="box-border flex w-full max-w-screen-lg flex-wrap justify-center bg-cover pt-4 sm:pt-6 lg:pt-16"
+        className="box-border flex w-full max-w-screen-lg flex-wrap justify-center bg-cover pt-4 sm:pt-6 md:pt-16"
       >
         <article
-          className={`flex w-full flex-col items-center justify-center p-4 sm:w-[37.5%] sm:p-6 lg:p-16 ${revertTextAndImage ? "sm:items-start" : "sm:items-end"}`}
+          className={`flex w-full flex-col items-center justify-center p-4 sm:w-[37.5%] sm:p-6 md:p-16 ${revertTextAndImage ? "sm:items-start" : "sm:items-end"}`}
         >
           <h2
-            className={`text-h4 sm:text-h3 lg:text-h2 mb-4 w-full text-center  ${revert ? "order-2" : "order-1"}`}
+            className={`text-h4 sm:text-h3 md:text-h2 mb-4 w-full text-center  ${revert ? "order-2" : "order-1"}`}
           >
             {title}
           </h2>
