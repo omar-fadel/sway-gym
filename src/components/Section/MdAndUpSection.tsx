@@ -54,14 +54,14 @@ const MdAndUpSection: React.FC<SectionProps> = ({
         >
           {sectionText.heading && (
             <h2
-              className={`text-h3 md:text-h2 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} mb-4 text-center`}
+              className={`text-h3 md:text-h2 ${sectionText.variant === "primary" ? "text-primary" : "text-black"} mb-4 text-start`}
             >
               {sectionText.heading}
             </h2>
           )}
           {sectionText.subHeading && (
             <h2
-              className={`mb-4 text-h3 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-center`}
+              className={`mb-4 text-h3 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-start`}
             >
               {sectionText.subHeading}
             </h2>
@@ -70,7 +70,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
             sectionText.paragraph.map((p, index) => (
               <p
                 key={`paragaraph-${id}-${index}`}
-                className={`text-center text-b3  md:text-b1 ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
+                className={`text-start text-b3  md:text-b1 ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
               >
                 {p}
               </p>

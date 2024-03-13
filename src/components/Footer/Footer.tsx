@@ -24,28 +24,30 @@ const Footer: React.FC<FooterProps> = ({
   reservation,
 }) => {
   return (
-    <footer className="flex flex-col gap-4 bg-black px-8 py-4">
-      <Image
-        className="-mx-4 mb-4"
-        alt="logo"
-        height={150}
-        width={150}
-        src={"/icons/swayIcon.svg"}
-      />
-      <div className="flex flex-wrap">
-        <SectionWrapper title={followTitle}>
-          <Follow {...followIcons} />
-        </SectionWrapper>
-        <SectionWrapper title={contactsTitle}>
-          <Contacts {...contacts} />
-        </SectionWrapper>
-        <SectionWrapper title={reservationTitle}>
-          <Reservation {...reservation} />
-        </SectionWrapper>
-      </div>
+    <div className="flex flex-col items-center bg-black">
+      <footer className="flex max-w-screen-lg flex-col gap-4 px-8 py-4">
+        <Image
+          className="-mx-4 mb-4"
+          alt="logo"
+          height={150}
+          width={150}
+          src={"/icons/swayIcon.svg"}
+        />
+        <div className="flex flex-wrap">
+          <SectionWrapper title={followTitle}>
+            <Follow {...followIcons} />
+          </SectionWrapper>
+          <SectionWrapper title={contactsTitle}>
+            <Contacts {...contacts} />
+          </SectionWrapper>
+          <SectionWrapper title={reservationTitle}>
+            <Reservation {...reservation} />
+          </SectionWrapper>
+        </div>
+      </footer>
       <div className="mt-8 h-1 w-full bg-primary" />
       <License />
-    </footer>
+    </div>
   );
 };
 

@@ -1,6 +1,8 @@
 import Section from "@/components/Section/Section";
 import { getDictionary } from "../dictionaries";
 import ValuesSection from "@/components/ValuesSection/ValuesSection";
+import RightsSection from "@/components/RightsSection/RightsSectiont";
+import WordSeparator from "@/components/WordSeparator/WordSeparator";
 
 export default async function AboutUs({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
@@ -79,6 +81,23 @@ export default async function AboutUs({ params: { lang } }: any) {
           height: 668,
           width: 386,
         }}
+      />
+      <RightsSection
+        {...dict.aboutUs.rightsSection}
+        image={{
+          alt: "rights ",
+          height: 642,
+          width: 652,
+          src: "/images/about/6girls.png",
+        }}
+        englishIcon="/icons/english-dictionary.svg"
+        arabicIcon="/icons/arabic-dictionary.svg"
+        backgroundImage="url('/images/about/backgrounds/6bg.png')"
+      />
+      <WordSeparator
+        buttonText={dict.headerButton}
+        variant="secondary"
+        word={dict.aboutUs.separator}
       />
     </div>
   );

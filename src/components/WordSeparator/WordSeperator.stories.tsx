@@ -16,3 +16,10 @@ export const Primary: StoryObj<typeof WordSeparator> = {
     word: "مستعدة؟",
   },
 };
+export const Separator: StoryObj<typeof WordSeparator> = {
+  args: {
+    variant: "secondary",
+    word: "مستعدة؟",
+    buttonText: "يسشسشي",
+  },
+};

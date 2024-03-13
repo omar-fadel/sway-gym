@@ -124,6 +124,14 @@
       "paragraph": [
         "في سواي جيم، نتصور مملكة ترحب كل امرأة بقوتها فيها، سواء كانت قوتها نابعة من الداخل أو الخارج. نحن نسعى لأن نكون إيقاع التغيير الإيجابي، لنخلق مجتمعا تزدهر القوة والعافية والفرح به."
       ]
-    }
+    },
+    "rightsSection": {
+      "arabicButtonText": "تحميل الـ PDF بالعربية",
+      "arabicParagraph": "وثيقة حماية المستهلك الخاصة بالمراكز والصالات الرياضية",
+      "englishButtonText": "Download English PDF",
+      "englishParagraph": "Protection Consumer Sports for Document Gymnasiums& Centers",
+      "title": "اعرفي حقوقك"
+    },
+    "separator": "جاهزة للتفيير؟"
   }
 }

@@ -26,7 +26,9 @@
 h1,h2,h3,h4 {
   font-family: 'Alexandria';
 }
+
 p {
-  font-family: "GE SS Two";
+  font-family: "GE SS Two" , "Alexandria";
 }
+
 

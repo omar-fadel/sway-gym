@@ -44,7 +44,7 @@ const AddressSection: React.FC<AddressSectionProps> = ({
               {addressTitle}
             </h3>
             <p
-              className={`text-b4 sm:text-b3 lg:text-b1 ${variant === "primary" ? "text-black" : "text-white"}'`}
+              className={`${variant === "primary" ? "text-black" : "text-white"} text-b4 sm:text-b3 lg:text-b1`}
             >
               {addressDetails}
             </p>

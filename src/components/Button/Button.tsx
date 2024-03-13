@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
       }}
       className={`rounded-full border-2 p-3 ${colorClass} ${hoverClass} ${className}`}
     >
-      <Typography variant="button">{children}</Typography>
+      <p className="text-button">{children}</p>
     </button>
   );
 };
