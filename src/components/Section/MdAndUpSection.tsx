@@ -33,30 +33,9 @@ const MdAndUpSection: React.FC<SectionProps> = ({
     <div
       className={`flex justify-center ${variant === "primary" ? "bg-primary" : "bg-secondary"} ${className}`}
     >
-      {/* <section
-        className={`flex max-w-screen-lg items-center ${!image || !sectionText ? "justify-center" : "justify-between"} p-8 ${bgImage ? `bg-${bgImage}` : ""} `}
-      >
-        {image ? (
-          <div
-            className={`${reverted ? "order-2" : "order-1"} mx-8 ${sectionText ? "w-1/2" : "w-full"} ${imageClassName}`}
-          >
-            <Image
-              src={image.src}
-              height={image.height}
-              width={image.height}
-              alt={image.alt}
-            />
-          </div>
-        ) : null}
-        <div
-          className={`mx-8  ${reverted ? "order-1" : "order-2"} ${image ? "w-1/2" : "w-full"} ${textClassName}`}
-        >
-          <SectionText id={id} {...sectionText} />
-        </div>
-      </section> */}
       <section
         style={{ backgroundImage: bgImage }}
-        className={`box-border flex w-full max-w-screen-lg py-6 md:py-16`}
+        className={`box-border flex w-full max-w-screen-lg bg-cover bg-cover py-6 md:py-16`}
       >
         {image && (
           <div
@@ -82,7 +61,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
           )}
           {sectionText.subHeading && (
             <h2
-              className={`text-h3 mb-4 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-center`}
+              className={`mb-4 text-h3 ${sectionText.variant === "primary" ? "text-white" : "text-black"} text-center`}
             >
               {sectionText.subHeading}
             </h2>
@@ -91,7 +70,7 @@ const MdAndUpSection: React.FC<SectionProps> = ({
             sectionText.paragraph.map((p, index) => (
               <p
                 key={`paragaraph-${id}-${index}`}
-                className={`text-b3 md:text-b1  text-center ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
+                className={`text-center text-b3  md:text-b1 ${sectionText.variant === "primary" ? "text-white" : "text-black"}`}
               >
                 {p}
               </p>

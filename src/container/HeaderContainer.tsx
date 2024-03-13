@@ -26,7 +26,7 @@ const HeaderContainer: React.FC<{
       activeItemId={currentRoute}
       headerItems={[
         {
-          id: "around-us",
+          id: "about-us",
           text: headers[0],
         },
         {
