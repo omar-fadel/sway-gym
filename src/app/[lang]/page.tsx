@@ -6,6 +6,7 @@ import ContactUsForm from "@/container/ContactUsForm";
 import Section from "@/components/Section/Section";
 import Banner from "@/components/Banner/Banner";
 import ValuesSection from "@/components/ValuesSection/ValuesSection";
+import AddressSection from "@/components/AddressSection/AddressSection";
 
 export default async function Home({ params: { lang } }: any) {
   const dict = await getDictionary(lang);
@@ -75,52 +76,17 @@ export default async function Home({ params: { lang } }: any) {
           width: 386,
         }}
       />
-      <section
-        className="flex flex-col items-center bg-map-background bg-cover py-16"
-        style={{ minHeight: 650 }}
-      >
-        <Typography variant="h3">{dict.home.addressTitle}</Typography>
-        <div className="flex grow flex-col items-center justify-center gap-14 text-center">
-          <article>
-            <Typography className="mb-4" variant="h4">
-              {dict.home.addressFirstLine}
-            </Typography>
-            <Typography variant="bodyLarge">
-              {dict.home.addressFirstLineDetails}
-            </Typography>
-          </article>
-          <article>
-            <Typography className="mb-6" variant="h4">
-              {dict.home.workTime}
-            </Typography>
-            <p
-              style={{
-                fontSize: "18pt",
-                fontFamily: "Alexandria",
-                fontWeight: "bold",
-              }}
-            >
-              {dict.home.fromToWorkTime}
-            </p>
-            <Typography variant="bodyLarge">
-              {dict.home.fromToWorkTimeDetails}
-            </Typography>
-            <p
-              style={{
-                fontSize: "18pt",
-                fontFamily: "Alexandria",
-                fontWeight: "bold",
-              }}
-            >
-              {dict.home.weekendException}
-            </p>
-            <Typography variant="bodyLarge">
-              {dict.home.weekendExceptionDetails}
-            </Typography>
-          </article>
-        </div>
-      </section>
-      <section className="flex justify-center gap-4 bg-secondary px-12 py-16">
+      <AddressSection
+        addressDetails={dict.address.addressDetails.details}
+        addressTitle={dict.address.addressDetails.detailsTitle}
+        backgroundImage="url('/images/address-map.png')"
+        normalWorkTime={dict.address.addressDetails.normalWorkTime}
+        weekendWorkTime={dict.address.addressDetails.weekendWorkTime}
+        sectionTitle={dict.address.addressDetails.title}
+        variant="primary"
+        workTimeTitle={dict.address.addressDetails.workTimeTitle}
+      />
+      {/* <section className="flex justify-center gap-4 bg-secondary px-12 py-16">
         <div className="flex max-w-screen-lg flex-col items-center">
           <Image
             width={382}
@@ -130,8 +96,8 @@ export default async function Home({ params: { lang } }: any) {
           />
           <ContactUsForm dictionary={dict} />
         </div>
-      </section>
-      <section className="flex items-end justify-center bg-feel-the-beat bg-cover p-8">
+      </section> */}
+      <section className="flex h-full items-end justify-center bg-feel-the-beat bg-cover px-8 pt-8">
         <Image
           width={846}
           height={461}

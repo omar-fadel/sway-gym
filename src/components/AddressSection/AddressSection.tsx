@@ -29,39 +29,55 @@ const AddressSection: React.FC<AddressSectionProps> = ({
     <section className={`bg-${variant} flex justify-center`}>
       <div
         style={{ backgroundImage }}
-        className={`flex w-full max-w-screen-lg flex-col items-center justify-center bg-cover px-8 pb-16 pt-12 text-center `}
+        className={`flex w-full max-w-screen-lg flex-col items-center justify-center bg-cover p-4 text-center sm:p-6 lg:p-16 `}
       >
-        <Typography className="mb-16 text-primary" variant="h3">
+        <h2
+          className={`mb-4 text-h4 sm:mb-6 sm:text-h3 lg:mb-16 lg:text-h2 ${variant === "primary" ? "text-black" : "text-primary"}`}
+        >
           {sectionTitle}
-        </Typography>
-        <div className="flex flex-col gap-16">
-          <article className="flex flex-col gap-4">
-            <Typography variant="h4" className="text-primary">
+        </h2>
+        <div className="flex flex-col gap-4 sm:gap-6 lg:gap-16">
+          <article className="flex flex-col gap-4 sm:gap-6 lg:gap-16">
+            <h3
+              className={`text-h4 lg:text-h3 ${variant === "primary" ? "text-black" : "text-primary"}`}
+            >
               {addressTitle}
-            </Typography>
-            <Typography variant="bodySmall" className="text-white">
+            </h3>
+            <p
+              className={`text-b4 sm:text-b3 lg:text-b1 ${variant === "primary" ? "text-black" : "text-white"}'`}
+            >
               {addressDetails}
-            </Typography>
+            </p>
           </article>
-          <article className="flex flex-col gap-10">
-            <Typography variant="h4" className="text-primary">
+          <article className="flex flex-col gap-4">
+            <h2
+              className={`text-h4 lg:text-h3 ${variant === "primary" ? "text-black" : "text-primary"}`}
+            >
               {workTimeTitle}
-            </Typography>
+            </h2>
             <div>
-              <Typography className="text-white" variant="bodyLarge">
+              <p
+                className={`${variant === "primary" ? "text-black" : "text-white"} text-b4 font-bold sm:text-b2 lg:text-b1`}
+              >
                 {normalWorkTime.days}
-              </Typography>
-              <Typography className="text-white" variant="bodySmall">
+              </p>
+              <p
+                className={`${variant === "primary" ? "text-black" : "text-white"} text-b4 lg:text-b1`}
+              >
                 {normalWorkTime.hours}
-              </Typography>
+              </p>
             </div>
             <div>
-              <Typography className="text-white" variant="bodyLarge">
+              <p
+                className={`${variant === "primary" ? "text-black" : "text-white"} text-b4 font-bold sm:text-b2 lg:text-b1`}
+              >
                 {weekendWorkTime.days}
-              </Typography>
-              <Typography className="text-white" variant="bodySmall">
+              </p>
+              <p
+                className={`${variant === "primary" ? "text-black" : "text-white"} text-b4 lg:text-b1`}
+              >
                 {weekendWorkTime.hours}
-              </Typography>
+              </p>
             </div>
           </article>
         </div>
