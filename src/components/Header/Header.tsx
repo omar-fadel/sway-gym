@@ -122,12 +122,11 @@ const Header: React.FC<HeaderProps> = ({
                     setMenuIsOpen(false);
                   }}
                 >
-                  <Typography
-                    variant="bodySmall"
-                    className={`${activeItemId === headerItem.id ? "text-primary" : "text-grey"}`}
+                  <p
+                    className={`${activeItemId === headerItem.id ? "text-primary" : "text-grey"} hover:cursor-pointer hover:text-primary`}
                   >
                     {headerItem.text}
-                  </Typography>
+                  </p>
                 </button>
               </div>
             ))}

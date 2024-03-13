@@ -24,7 +24,8 @@ const Footer: React.FC<FooterProps> = ({
   reservation,
 }) => {
   return (
-    <div className="flex flex-col items-center bg-black">
+
+<div className="flex flex-col items-center bg-black">
       <footer className="flex max-w-screen-lg flex-col gap-4 px-8 py-4">
         <Image
           className="-mx-4 mb-4"
