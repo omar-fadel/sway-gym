@@ -29,15 +29,15 @@ const ReservationSection: React.FC<ReservationSectionProps> = ({
     <section className={`flex justify-center bg-secondary`}>
       <div
         style={{ backgroundImage }}
-        className={`flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12`}
+        className={`flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover py-4 sm:py-6 md:py-16`}
       >
-        <article className="m-8 w-full text-center md:w-fit md:text-start">
-          <Typography variant="h1" className="mb-10 text-primary">
+        <article className="mb-4 w-full text-center sm:mb-0 sm:w-[50%] md:w-[60%]">
+          <h1 className="mb-4 text-h4 text-primary sm:mb-6 sm:text-h2 md:mb-8 md:text-h1">
             {reservationTitle}
-          </Typography>
-          <Typography variant="h2" className="mb-10 text-white">
+          </h1>
+          <h2 className="mb-4 text-b1 font-bold text-white sm:mb-6 sm:text-h3 md:mb-8 md:text-h2">
             {buttonPrompt}
-          </Typography>
+          </h2>
           <Button
             color="primary"
             onClick={() => {
@@ -47,12 +47,13 @@ const ReservationSection: React.FC<ReservationSectionProps> = ({
             {buttonText}
           </Button>
         </article>
-        <div className="mx-8">
+        <div className="flex w-1/2 justify-center sm:w-[50%] md:w-[40%]">
           <Image
             alt={reservationImage.alt}
             src={reservationImage.src}
             width={reservationImage.width}
             height={reservationImage.height}
+            className="-mb-4 sm:-mb-6 md:-mb-16"
           />
         </div>
       </div>
