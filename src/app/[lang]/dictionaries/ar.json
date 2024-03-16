@@ -96,9 +96,11 @@
     }
   },
   "booking": {
-    "reservationSubTitle": "نتشرف بحضورك لتشريح عضلي وخطة تمرين مجانية",
-    "reservationTitle": "احجزي معادك المجاني الان",
-    "banner": "نحن متحمسون لرحلتنا!"
+    "phoneNumber": "+966 554 697 340",
+    "phoneTitle": "رقم الهاتف",
+    "time": "7ص الى  10م",
+    "timeTitle": "اتصلي بنا من",
+    "title": "نحن هنا من اجلك"
   },
   "aboutUs": {
     "firstSection": {
