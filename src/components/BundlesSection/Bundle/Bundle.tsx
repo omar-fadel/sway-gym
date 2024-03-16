@@ -27,19 +27,19 @@ const Bundle: React.FC<BundleProps> = ({
         />
       </section>
       <section className="flex flex-grow flex-col justify-between bg-gray-500 px-4 py-6 sm:px-6">
-        <div className="flex flex-col gap-2 lg:gap-6">
+        <div className="flex flex-col gap-2 md:gap-6">
           <article>
-            <p className="text-b2 font-bold text-white lg:text-b1 ">{title}</p>
+            <p className="text-b2 font-bold text-white md:text-b1 ">{title}</p>
           </article>
           <article className="flex items-center gap-2">
-            <h2 className="text-h2 text-primary lg:text-h3">{price}</h2>
+            <h2 className="text-h2 text-primary md:text-h3">{price}</h2>
             <p className="text-b3 text-primary">{currency}</p>
           </article>
-          <article className="pb-4">
+          <article className="pb-4 sm:pb-8 md:pb-16">
             {details.map((detail, index) => (
               <p
                 key={`${id}-detail-${index}`}
-                className="text-b4 text-white lg:text-b3"
+                className="text-b4 text-white md:text-b3"
               >
                 {detail}
               </p>

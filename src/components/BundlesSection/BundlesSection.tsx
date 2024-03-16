@@ -31,15 +31,15 @@ const BundlesSection: React.FC<BundlesSection> = ({
 }) => {
   return (
     <div className="flex justify-center bg-secondary">
-      <section className="w-full max-w-screen-lg py-6 lg:py-16">
-        <h2 className="mb-4 text-center text-h4 text-white sm:mb-6 sm:text-h3 lg:mb-8 lg:text-h2">
+      <section className="w-full max-w-screen-lg py-6 md:py-16">
+        <h2 className="mb-4 text-center text-h4 text-white sm:mb-6 sm:text-h3 md:mb-8 md:text-h2">
           {title}
         </h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {bundles.map((bundle, index) => (
             <div
               key={`bundle-${index}`}
-              className="w-full px-4 sm:w-3/4 lg:w-2/5"
+              className="w-full px-4 sm:w-3/4 sm:px-0 md:w-2/5"
             >
               <Bundle
                 {...bundle}
