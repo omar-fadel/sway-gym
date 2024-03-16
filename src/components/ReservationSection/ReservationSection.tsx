@@ -31,7 +31,7 @@ const ReservationSection: React.FC<ReservationSectionProps> = ({
         style={{ backgroundImage }}
         className={`flex w-full max-w-screen-lg flex-wrap items-center justify-center bg-cover pt-12`}
       >
-        <article className="m-8 w-full text-center lg:w-fit lg:text-start">
+        <article className="m-8 w-full text-center md:w-fit md:text-start">
           <Typography variant="h1" className="mb-10 text-primary">
             {reservationTitle}
           </Typography>

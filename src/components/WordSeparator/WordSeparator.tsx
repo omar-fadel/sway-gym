@@ -10,13 +10,13 @@ const WordSeparator: React.FC<{
 }> = ({ word, variant, buttonText, onClick, className }) => {
   return (
     <section
-      className={`flex justify-center py-6 lg:py-16 bg-${variant} ${className}`}
+      className={`flex justify-center py-6 md:py-16 bg-${variant} ${className}`}
     >
       <div
         className={`flex w-full max-w-screen-lg flex-wrap items-center justify-center gap-4 px-16 sm:justify-center sm:gap-6`}
       >
         <h2
-          className={`text-center text-h3  sm:text-h2 lg:text-h1 ${variant === "primary" ? "text-secondary" : "text-primary"} w-fit`}
+          className={`text-center text-h3  sm:text-h2 md:text-h1 ${variant === "primary" ? "text-secondary" : "text-primary"} w-fit`}
         >
           {word}
         </h2>

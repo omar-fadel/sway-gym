@@ -43,24 +43,24 @@ const ClassesSection: React.FC<ClassesSectionProps> = ({
     >
       <section
         style={{ backgroundImage }}
-        className="flex w-full max-w-screen-lg flex-col flex-wrap items-center gap-4 bg-cover px-4 py-4 sm:gap-6 sm:py-6 lg:gap-8 lg:py-16"
+        className="flex w-full max-w-screen-lg flex-col flex-wrap items-center gap-4 bg-cover px-4 py-4 sm:gap-6 sm:py-6 md:gap-8 md:py-16"
       >
         <h2
-          className={`text-h4sm:text-h3 text-center lg:text-h2 ${variant === "primary" ? "text-white" : "text-black"}`}
+          className={`text-h4sm:text-h3 text-center md:text-h2 ${variant === "primary" ? "text-white" : "text-black"}`}
         >
           {title}
         </h2>
         {subTitle && (
           <h3
-            className={`text-center text-h4 text-primary sm:text-h3 lg:text-h2 ${variant === "primary" ? "text-primary" : "text-black"}`}
+            className={`text-center text-h4 text-primary sm:text-h3 md:text-h2 ${variant === "primary" ? "text-primary" : "text-black"}`}
           >
             {subTitle}
           </h3>
         )}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-0">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-0">
           {classes.map((c, index) => (
             <div
-              className="flex w-full flex-col items-center gap-4 sm:w-1/3 sm:gap-6 lg:w-3/12 lg:px-6"
+              className="flex w-full flex-col items-center gap-4 sm:w-1/3 sm:gap-6 md:w-3/12 md:px-6"
               key={`class-${index}`}
             >
               <Class

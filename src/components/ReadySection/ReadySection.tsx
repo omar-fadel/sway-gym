@@ -24,10 +24,10 @@ const ReadySection: React.FC<ReadySectionProps> = ({
     <div className="flex justify-center bg-primary">
       <section
         style={{ backgroundImage }}
-        className="box-border flex flex-wrap bg-cover px-4 pt-4 sm:px-6 sm:pt-6 lg:px-16 lg:pt-16"
+        className="box-border flex flex-wrap bg-cover px-4 pt-4 sm:px-6 sm:pt-6 md:px-16 md:pt-16"
       >
         <div className="flex w-full flex-col justify-center text-center sm:w-1/2">
-          <h2 className="mb-4 text-h3 sm:mb-6 sm:text-h2 lg:mb-8 lg:text-h1">
+          <h2 className="mb-4 text-h3 sm:mb-6 sm:text-h2 md:mb-8 md:text-h1">
             {title}
           </h2>
           <div className="mb-4 flex justify-center sm:mb-0">

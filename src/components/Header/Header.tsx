@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({
               </Button>
             </div>
           </div>
-          <div className="hidden gap-5 sm:flex lg:gap-12">
+          <div className="hidden gap-5 sm:flex md:gap-12">
             {headerItems.map((headerItem) => (
               <div
                 key={headerItem.id}

@@ -19,7 +19,7 @@ const Class: React.FC<ClassProps & { index?: number; currency: string }> = ({
       className={`flex max-w-72 flex-col items-center rounded-xl border-4 px-2 py-4 text-center font-bold sm:border-0 sm:py-6 ${variant === "primary" ? "border-primary" : "border-secondary"} ${hasBorder ? "border-4" : "border-0"}`}
     >
       <p
-        className={`text-b3 sm:text-h4 lg:text-h3 ${variant === "primary" ? "text-white" : "text-gray-700"}`}
+        className={`text-b3 sm:text-h4 md:text-h3 ${variant === "primary" ? "text-white" : "text-gray-700"}`}
       >
         {title}
       </p>
@@ -40,14 +40,14 @@ const Class: React.FC<ClassProps & { index?: number; currency: string }> = ({
         {price}
       </h2>
       <p
-        className={`mb-4 text-b3 font-bold sm:-mt-6 sm:text-h2 lg:text-h4 ${variant === "primary" ? "text-primary" : "text-black"}`}
+        className={`mb-4 text-b3 font-bold sm:-mt-6 sm:text-h2 md:text-h4 ${variant === "primary" ? "text-primary" : "text-black"}`}
       >
         {currency}
       </p>
       {details.map((d, i) => (
         <p
           key={`p-${i}-card-${index}`}
-          className={`text-b4 sm:text-b3 lg:text-b4 ${variant === "primary" ? "text-white" : "text-black"}`}
+          className={`text-b4 sm:text-b3 md:text-b4 ${variant === "primary" ? "text-white" : "text-black"}`}
         >
           {d}
         </p>

@@ -20,7 +20,7 @@ export const Primary: StoryObj<typeof meta> = {
       width: 546,
       src: "/images/home/section-one.png",
     },
-    textClassName: "text-center lg:text-start",
+    textClassName: "text-center md:text-start",
     sectionText: {
       heading: "سواي. سواي. سواي.",
       variant: "primary",
