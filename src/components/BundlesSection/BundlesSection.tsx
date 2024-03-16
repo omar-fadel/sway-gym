@@ -1,9 +1,10 @@
+"use client";
 import Bundle from "./Bundle/Bundle";
 
 export interface Bundle {
   title: string;
   price: string;
-  currency: string;
+  currency?: string;
   details: string[];
   buttonText: string;
   image: {
@@ -20,7 +21,8 @@ interface BundlesSection {
   title: string;
   bundles: Bundle[];
   imagesWidth?: number;
-  imagesHeight?: number; //180 x 314
+  imagesHeight?: number;
+  currency: string; //180 x 314
 }
 
 const BundlesSection: React.FC<BundlesSection> = ({
@@ -28,6 +30,7 @@ const BundlesSection: React.FC<BundlesSection> = ({
   title,
   imagesHeight = 314,
   imagesWidth = 180,
+  currency,
 }) => {
   return (
     <div className="flex justify-center bg-secondary">
@@ -43,6 +46,7 @@ const BundlesSection: React.FC<BundlesSection> = ({
             >
               <Bundle
                 {...bundle}
+                currency={currency}
                 image={{
                   height: imagesHeight,
                   width: imagesWidth,

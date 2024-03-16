@@ -13,11 +13,11 @@ export default meta;
 export const Primary: StoryObj<typeof meta> = {
   args: {
     title: "باقتنا",
+    currency: "ريال",
     bundles: [
       {
         backgroundImage: "url('/images/prices/backgrounds/4bg.png')",
         buttonText: "اشتركي الآن",
-        currency: "ريال",
         details: ["اشتراك ٣ شهور", "٣ شهور ايروبيك", "مدرب شخصي"],
         image: { src: "/images/prices/bundles/bun1.png", alt: "bundle" },
         price: "1205",
@@ -27,7 +27,6 @@ export const Primary: StoryObj<typeof meta> = {
       {
         backgroundImage: "url('/images/prices/backgrounds/4bg.png')",
         buttonText: "اشتركي الآن",
-        currency: "ريال",
         details: ["اشتراك ٣ شهور", "٣ شهور ايروبيك", "مدرب شخصي"],
         image: { src: "/images/prices/bundles/bun2.png", alt: "bundle" },
         price: "1205",
@@ -37,7 +36,6 @@ export const Primary: StoryObj<typeof meta> = {
       {
         backgroundImage: "url('/images/prices/backgrounds/4bg.png')",
         buttonText: "اشتركي الآن",
-        currency: "ريال",
         details: ["اشتراك ٣ شهور", "٣ شهور ايروبيك", "مدرب شخصي"],
         image: { src: "/images/prices/bundles/bun3.png", alt: "bundle" },
         price: "1205",
@@ -47,7 +45,6 @@ export const Primary: StoryObj<typeof meta> = {
       {
         backgroundImage: "url('/images/prices/backgrounds/4bg.png')",
         buttonText: "اشتركي الآن",
-        currency: "ريال",
         details: ["اشتراك ٣ شهور", "٣ شهور ايروبيك", "مدرب شخصي"],
         image: { src: "/images/prices/bundles/bun4.png", alt: "bundle" },
         price: "1205",

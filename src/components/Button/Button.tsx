@@ -1,5 +1,5 @@
+"use client";
 import { ReactNode } from "react";
-import Typography from "../Typography/Typography";
 
 interface ButtonProps {
   children: ReactNode;
